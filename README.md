@@ -204,10 +204,6 @@ We have deployed a disaggregated gNB following the 3GPP CU/DU split with O‑RAN
 
 The O‑DU and O‑RU communicate via the **Open Fronthaul** interface over ZMQ. The O‑CU connects to the 5G Core via **N2 (NGAP)** and **N3 (GTP‑U)** interfaces. The Near‑RT RIC communicates with the O‑CU/O‑DU over the **E2** interface.
 
-<div align="center">
-  <img src="images/fig_testbed_topology.png" alt="Testbed network diagram" width="90%">
-  <br><em>Figure 11: Testbed network topology</em>
-</div>
 
 ### 7.7 Isolation Pipeline
 When a security violation is detected (e.g., CPU usage exceeds quota, unexpected file access, or failed identity attestation), the framework triggers automated containment:
@@ -219,10 +215,6 @@ When a security violation is detected (e.g., CPU usage exceeds quota, unexpected
 
 This pipeline ensures that even if an xApp is compromised at runtime, the damage is contained within seconds.
 
-<div align="center">
-  <img src="images/fig_isolation_pipeline.png" alt="Isolation pipeline diagram" width="70%">
-  <br><em>Figure 12: Automated isolation pipeline</em>
-</div>
 
 ### 7.8 Future Work
 - **Integration of Zero‑Knowledge Virtual Machines (zkVMs)** – to provide cryptographic proof of correct computation without revealing internal data.
