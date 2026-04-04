@@ -1,6 +1,6 @@
 # Threat Containment Strategies for Compromised xApps in Open RAN
 
-## 📌 Project Overview
+## Project Overview
 This repository serves as the architectural foundation and research documentation for developing a **Zero‑Trust threat containment framework** within an Open RAN (O‑RAN) environment.
 
 The primary objective of this project is to implement a security framework that enhances the resilience of the **Near‑Real‑Time RAN Intelligent Controller (Near‑RT RIC)** by actively authenticating workloads and isolating compromised third‑party microservices (xApps) at runtime.
@@ -18,7 +18,7 @@ The primary objective of this project is to implement a security framework that 
 
 ---
 
-## 🌐 1. What is O‑RAN and Where is it Used?
+## 1. What is O‑RAN and Where is it Used?
 
 Traditional Radio Access Networks (RAN) are fundamentally monolithic “black boxes”. In these legacy systems, all functionalities—from Radio Frequency (RF) processing up to Radio Resource Control (RRC)—are bundled into a single vendor’s proprietary hardware. This closed ecosystem limits flexibility, stifles innovation, and causes severe vendor lock‑in.
 
@@ -38,7 +38,7 @@ O‑RAN is deployed in modern 5G Standalone (SA) networks, private enterprise 5G
 
 ---
 
-## 🏗️ 2. O‑RAN Architecture and Key Principles
+## 2. O‑RAN Architecture and Key Principles
 
 The O‑RAN architecture is built on four key principles:
 
@@ -56,7 +56,7 @@ The O‑RAN architecture is built on four key principles:
 
 ---
 
-## 🔧 3. The O‑RAN Stack: CU, DU, RU and Functional Splits
+## 3. The O‑RAN Stack: CU, DU, RU and Functional Splits
 
 The O‑RAN stack follows the 3GPP functional split, with the gNB divided into:
 
@@ -73,7 +73,7 @@ The O‑RAN specifications define the **7.2x functional split** between the O‑
 
 ---
 
-## 🧠 4. The RAN Intelligent Controllers (RICs)
+## 4. The RAN Intelligent Controllers (RICs)
 
 ### 4.1 Near‑RT RIC and xApps
 - **Operating timescale:** 10 ms – 1 s  
@@ -99,7 +99,7 @@ The O‑RAN specifications define the **7.2x functional split** between the O‑
 
 ---
 
-## 🔌 5. Key O‑RAN Interfaces
+## 5. Key O‑RAN Interfaces
 
 | Interface | Connects | Purpose |
 |-----------|----------|---------|
@@ -116,7 +116,7 @@ The O‑RAN specifications define the **7.2x functional split** between the O‑
 
 ---
 
-## ⚠️ 6. Security Challenges in O‑RAN
+## 6. Security Challenges in O‑RAN
 
 The openness and disaggregation of O‑RAN introduce new security challenges:
 
@@ -135,7 +135,7 @@ These challenges necessitate a **Zero Trust** approach, where every component is
 
 ---
 
-## 🛡️ 7. Our Project: Threat Containment for Compromised xApps
+## 7. Our Project: Threat Containment for Compromised xApps
 
 ### 7.1 Problem Statement
 O‑RAN allows third‑party xApps to execute control actions inside the Near‑RT RIC. A compromised xApp can:
@@ -224,7 +224,7 @@ This pipeline ensures that even if an xApp is compromised at runtime, the damage
 
 ---
 
-## 📚 8. References
+## 8. References
 1. M. Polese, L. Bonati, S. D'Oro, S. Basagni, and T. Melodia, “Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges,” *IEEE Communications Surveys & Tutorials*, vol. 25, no. 2, pp. 1376–1411, 2023.
 2. O-RAN Working Group 1, “O-RAN Architecture Description,” O-RAN ALLIANCE, Tech. Rep. TR.0-R004-v15.00, Oct. 2025.
 3. O-RAN Working Group 3, “Near-RT RIC Architecture,” O-RAN ALLIANCE, Tech. Rep. TR.0-R004-v07.00, Feb. 2025.
